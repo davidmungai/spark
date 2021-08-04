@@ -14,20 +14,20 @@ default structured streaming job for apache spark
 
 Beware of deprecated methods in spark >2.* so if you use it you cannot access structured streaming.
 
-1)Brew Coffee , Lots of it
-2)install java
-3) install kafka
-4) install spark
-5) install pyspark
-6) start kafka
-7) start spark
-8) proceed to spark conf folder 
+- Brew Coffee , Lots of it
+- install java
+- install kafka
+- install spark
+- install pyspark
+- start kafka
+- start spark
+- proceed to spark conf folder 
     - copy log.properties.default to log.properties
     - remove INFO with WARN (This one really pissed me off , logs kept streaming and I couldnt find my outputs)
-9)create a python folder
-10)add the py_spark.py and save
-11)Ensure you have netcat installed then run nc -l 9999
-12)use spark_submit found in /spark_installation_path/bin/spark_submit
+- create a python folder
+- add the py_spark.py and save
+- Ensure you have netcat installed then run nc -l 9999
+- use spark_submit found in /spark_installation_path/bin/spark_submit
     - use the following command  /spark_installation_path/bin/spark_submit  /python_script_job_path/spark_job.py localhost 9999
     
  ## Output
